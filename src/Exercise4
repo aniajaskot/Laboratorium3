@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Exercise4 {
+    public static void main(String[] args) {
+        int [][] array = new int[3][3];
+
+        Scanner scanner = new Scanner(System.in);
+        for(int i = 0; i<array.length; i++){
+            for(int j = 0; j< array[i].length; j++){
+                System.out.println("podaj liczbe");
+                array[i][j] = scanner.nextInt();
+                scanner.nextLine();
+            }
+        }
+
+        int biggestIndex = 0;
+        int biggestSum = Integer.MIN_VALUE;
+
+        for(int i = 0; i< array.length; i++){
+            int rowSum = 0;
+            for(int j = 0; j< array[i].length; j++){
+                rowSum += array[i][j];
+            }
+            if(rowSum > biggestSum){
+                biggestSum = rowSum;
+                biggestIndex = i;
+            }
+        }
+        System.out.println("Największa suma liczb jest w wierszu " + (biggestIndex +1) + " i wynosi " + biggestSum);
+
+    }
+}
