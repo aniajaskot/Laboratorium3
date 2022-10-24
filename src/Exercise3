@@ -7,7 +7,7 @@ public class Exercise3 {
         int number = input.nextInt();
         input.nextLine();
 
-        if(number >= -100 && number < 0){
+        if(number >= -100 && number < 0){ 
             for(int i = -100; i <= number; i++){
                 System.out.print(i + " ");
             }
