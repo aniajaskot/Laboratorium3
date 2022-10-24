@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercise3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Podaj liczbe");
+        System.out.println("Podaj liczbe z przedzialu [-100,100]");
         int number = input.nextInt();
         input.nextLine();
 
